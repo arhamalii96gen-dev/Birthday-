@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Neeshu 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#08070b;
+    color:#fff;
+    font-family:'DM Sans',sans-serif;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:80px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.container{
+    width:100%;
+    max-width:850px;
+    text-align:center;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,80,150,.12),transparent 30%),
+        radial-gradient(circle at 80% 70%,rgba(150,80,255,.12),transparent 30%);
+    z-index:-2;
+}
+
+/* INTRO */
+
+#intro{
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    background:#08070b;
+    flex-direction:column;
+    transition:1s ease;
+}
+
+.intro-small{
+    font-size:14px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    opacity:.55;
+    margin-bottom:25px;
+}
+
+.intro-name{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(55px,15vw,120px);
+    background:linear-gradient(90deg,#fff,#ff8fc4,#fff);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shine 3s infinite linear;
+}
+
+@keyframes shine{
+    0%{filter:brightness(.8)}
+    50%{filter:brightness(1.5)}
+    100%{filter:brightness(.8)}
+}
+
+.intro-text{
+    margin:25px auto;
+    max-width:550px;
+    line-height:1.7;
+    opacity:.7;
+}
+
+.open-btn{
+    margin-top:25px;
+    padding:15px 30px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:50px;
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.open-btn:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,.12);
+}
+
+/* HERO */
+
+.hero-label{
+    font-size:13px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    opacity:.45;
+    margin-bottom:20px;
+}
+
+.hero-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(50px,12vw,100px);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+.hero-title span{
+    display:block;
+    background:linear-gradient(90deg,#ff9dcc,#fff,#c99cff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero-sub{
+    max-width:620px;
+    margin:auto;
+    opacity:.65;
+    line-height:1.8;
+}
+
+/* TYPING */
+
+.typing{
+    margin-top:30px;
+    min-height:35px;
+    font-size:18px;
+    opacity:.8;
+}
+
+.cursor{
+    display:inline-block;
+    width:2px;
+    height:20px;
+    background:#fff;
+    margin-left:4px;
+    animation:blink .7s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0}
+}
+
+/* CARDS */
+
+.card{
+    padding:35px 28px;
+    margin:25px 0;
+    border:1px solid rgba(255,255,255,.09);
+    background:rgba(255,255,255,.035);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    box-shadow:0 20px 70px rgba(0,0,0,.25);
+}
+
+.card h2{
+    font-family:'Playfair Display',serif;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.9;
+    opacity:.75;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:30px;
+}
+
+.time-box{
+    padding:20px 10px;
+    border-radius:18px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.time-number{
+    font-size:32px;
+    font-weight:700;
+}
+
+.time-label{
+    margin-top:5px;
+    font-size:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:.4;
+}
+
+.birthday-now{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin-top:25px;
+}
+
+/* ROAST */
+
+.roast{
+    border-color:rgba(255,180,80,.15);
+}
+
+.roast-title{
+    font-size:13px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    opacity:.5;
+    margin-bottom:15px;
+}
+
+.roast-line{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    margin:20px 0;
+}
+
+.roast small{
+    opacity:.45;
+}
+
+/* SWEET */
+
+.sweet{
+    border-color:rgba(255,100,180,.15);
+}
+
+.sweet p{
+    font-size:17px;
+}
+
+/* LETTER */
+
+.letter{
+    text-align:left;
+}
+
+.letter h2{
+    text-align:center;
+}
+
+.letter p{
+    margin:18px 0;
+    font-size:16px;
+}
+
+/* BUTTON */
+
+.surprise-btn{
+    margin-top:30px;
+    padding:16px 30px;
+    border:none;
+    border-radius:50px;
+    background:#fff;
+    color:#111;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.surprise-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+.hidden-message{
+    display:none;
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    animation:fadeUp .7s ease;
+}
+
+.hidden-message.show{
+    display:block;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* SECRET */
+
+.secret-wrapper{
+    margin-top:35px;
+}
+
+.secret-title{
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    opacity:.35;
+    margin-bottom:15px;
+}
+
+.secret-btn{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.04);
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.secret-btn:hover{
+    transform:scale(1.12) rotate(8deg);
+    background:rgba(255,255,255,.1);
+    box-shadow:0 0 35px rgba(255,100,180,.2);
+}
+
+.secret-message{
+    display:none;
+    margin-top:25px;
+    padding:28px;
+    border-radius:20px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.1);
+    animation:secretReveal .8s ease;
+}
+
+.secret-message.show{
+    display:block;
+}
+
+@keyframes secretReveal{
+    from{
+        opacity:0;
+        transform:scale(.92) translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:scale(1) translateY(0);
+    }
+}
+
+/* FINAL */
+
+.final-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,10vw,85px);
+    margin-bottom:20px;
+}
+
+.final-text{
+    opacity:.6;
+    line-height:1.8;
+}
+
+.signature{
+    margin-top:35px;
+    opacity:.45;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/* HEARTS */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    opacity:.5;
+    animation:floatUp linear forwards;
+    z-index:-1;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+    15%{
+        opacity:.6;
+    }
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* CONFETTI */
+
+.confetti{
+    position:fixed;
+    top:-20px;
+    width:8px;
+    height:14px;
+    z-index:2000;
+    pointer-events:none;
+    animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+/* REVEAL */
+
+.reveal{
+    opacity:0;
+    transform:translateY(35px);
+    transition:1s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* FOOTER */
+
+footer{
+    padding:30px;
+    text-align:center;
+    opacity:.3;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    section{
+        padding:70px 17px;
+    }
+
+    .card{
+        padding:28px 20px;
+        border-radius:20px;
+    }
+
+    .card h2{
+        font-size:29px;
+    }
+
+    .roast-line{
+        font-size:24px;
+    }
+
+    .letter p{
+        font-size:15px;
+    }
+
+    .countdown{
+        gap:7px;
+    }
+
+    .time-box{
+        padding:15px 5px;
+    }
+
+    .time-number{
+        font-size:24px;
+    }
+
+    .time-label{
+        font-size:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<section id="intro">
+
+    <div class="intro-small">
+        A tiny surprise for
+    </div>
+
+    <div class="intro-name">
+        Neeshu
+    </div>
+
+    <p class="intro-text">
+        I could've just sent you a normal birthday message...
+        but where's the fun in that? 😂
+    </p>
+
+    <button class="open-btn" onclick="openSurprise()">
+        Open Your Surprise 🎁
+    </button>
+
+</section>
+
+
+<!-- HERO -->
+
+<section>
+
+<div class="container">
+
+    <div class="hero-label">
+        September 13 • Birthday Edition
+    </div>
+
+    <h1 class="hero-title">
+        Happy Birthday
+        <span>Neeshu 🎂</span>
+    </h1>
+
+    <p class="hero-sub">
+        Okay listen... before you start judging this website,
+        just remember someone actually spent time making this for you. 😭😂
+    </p>
+
+    <div class="typing">
+        <span id="typingText"></span>
+        <span class="cursor"></span>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card">
+
+        <div class="hero-label">
+            The annual event is approaching 👀
+        </div>
+
+        <h2>
+            Countdown to September 13 🎂
+        </h2>
+
+        <div class="countdown" id="countdown">
+
+            <div class="time-box">
+                <div class="time-number" id="days">00</div>
+                <div class="time-label">Days</div>
+            </div>
+
+            <div class="time-box">
+                <div class="time-number" id="hours">00</div>
+                <div class="time-label">Hours</div>
+            </div>
+
+            <div class="time-box">
+                <div class="time-number" id="minutes">00</div>
+                <div class="time-label">Minutes</div>
+            </div>
+
+            <div class="time-box">
+                <div class="time-number" id="seconds">00</div>
+                <div class="time-label">Seconds</div>
+            </div>
+
+        </div>
+
+        <div id="birthdayNow" class="birthday-now" style="display:none;">
+            IT'S YOUR BIRTHDAY!!! 🎉🎂💗
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ROAST -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card roast">
+
+        <div class="roast-title">
+            Official Birthday Roast 😂
+        </div>
+
+        <div class="roast-line">
+            Congratulations!
+        </div>
+
+        <p>
+            You have successfully survived another year
+            of your own decisions. 💀
+        </p>
+
+        <br>
+
+        <p>
+            Honestly, that's impressive.
+            Most people would've given up by now. 😂
+        </p>
+
+        <br>
+
+        <p>
+            But don't worry...
+            today you are officially allowed to be dramatic,
+            annoying, and unnecessarily happy.
+        </p>
+
+        <br>
+
+        <small>
+            Terms & conditions may apply. 😭
+        </small>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SWEET -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card sweet">
+
+        <h2>
+            Okay okay... serious mode. 💗
+        </h2>
+
+        <p>
+            Jokes aside, I genuinely hope this new year of your life
+            brings you a lot of happiness, peace and beautiful moments.
+        </p>
+
+        <br>
+
+        <p>
+            You deserve people around you who appreciate you,
+            support you, and make you laugh even on the randomest days.
+        </p>
+
+        <br>
+
+        <p>
+            Keep being yourself.
+            The world already has enough copies. :)
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card letter">
+
+        <h2>
+            A little birthday letter 💌
+        </h2>
+
+        <p>
+            Dear Neeshu,
+        </p>
+
+        <p>
+            So... it's your birthday.
+            And instead of writing the usual two-line
+            "Happy Birthday" message,
+            I thought I'd do something slightly more ridiculous. 😂
+        </p>
+
+        <p>
+            First of all, I hope you know that birthdays aren't
+            just about getting older. They're little reminders
+            that you've made it through another year,
+            experienced new things, met new people,
+            learned new lessons and created memories
+            that you'll carry with you.
+        </p>
+
+        <p>
+            I hope this next chapter is kinder to you.
+            I hope you get more reasons to smile,
+            more moments that make you genuinely happy,
+            and fewer things that unnecessarily stress you out.
+        </p>
+
+        <p>
+            I hope you meet good people,
+            keep the people who genuinely care about you,
+            and never feel like you have to change yourself
+            just to fit somewhere.
+        </p>
+
+        <p>
+            And yeah...
+            don't become TOO mature just because it's your birthday.
+            We still need someone to make questionable decisions
+            for entertainment. 😭😂
+        </p>
+
+        <p>
+            Anyway, enough emotional damage for one website.
+            Have an amazing birthday, enjoy your day,
+            eat something ridiculously good,
+            laugh a lot and make some memories worth remembering.
+        </p>
+
+        <p>
+            Happy Birthday once again, Neeshu. 🎂💗
+        </p>
+
+        <p>
+            Here's to another year of chaos,
+            laughter and hopefully fewer problems. 😂
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SURPRISE -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card">
+
+        <div class="hero-label">
+            One last thing...
+        </div>
+
+        <h2>
+            Think you're done? 👀
+        </h2>
+
+        <p>
+            Nope.
+            There's one tiny surprise left.
+        </p>
+
+        <button class="surprise-btn" onclick="showMessage()">
+            Click Me 🎁
+        </button>
+
+        <div id="hiddenMessage" class="hidden-message">
+
+            <h2>🎉 SURPRISE 🎉</h2>
+
+            <p>
+                I hope you smiled at least once while going
+                through this.
+                If yes, mission accomplished. 😌
+            </p>
+
+            <br>
+
+            <p>
+                And if you didn't...
+                respectfully, that's a skill issue. 😭😂
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SECRET MESSAGE -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="card">
+
+        <div class="secret-title">
+            You weren't supposed to find this 👀
+        </div>
+
+        <h2>
+            🔒 Secret Message
+        </h2>
+
+        <p>
+            There might be something hidden here...
+        </p>
+
+        <div class="secret-wrapper">
+
+            <button class="secret-btn" onclick="openSecret()">
+                🔐
+            </button>
+
+            <div id="secretMessage" class="secret-message">
+
+                <h2>
+                    Okay... you found it. 😭
+                </h2>
+
+                <p>
+                    Since you made it this far,
+                    here's the truth:
+                </p>
+
+                <br>
+
+                <p>
+                    I hope this birthday becomes one of those
+                    days you remember with a smile.
+                    Not because of this website,
+                    but because of all the little moments
+                    that made the day special.
+                </p>
+
+                <br>
+
+                <p>
+                    Now close this secret before anyone else
+                    finds it. 👀😂
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="final-title">
+        Happy Birthday,
+        Neeshu 💗
+    </div>
+
+    <p class="final-text">
+        May your September 13 be the beginning
+        of a really good year for you.
+    </p>
+
+    <p class="final-text">
+        Keep smiling. Keep laughing.
+        And keep being the wonderfully chaotic person you are. 😂
+    </p>
+
+    <div class="signature">
+        Made with a little too much effort 😂
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+    September 13 • Birthday Edition 🎂
+</footer>
+
+
+<script>
+
+/* INTRO */
+
+function openSurprise(){
+
+    const intro = document.getElementById("intro");
+
+    intro.style.opacity = "0";
+    intro.style.pointerEvents = "none";
+
+    setTimeout(()=>{
+
+        intro.style.display = "none";
+
+        startHearts();
+        startTyping();
+
+    },1000);
+
+}
+
+
+/* TYPING ANIMATION */
+
+const typingLines = [
+
+    "Someone's birthday is coming... 👀",
+
+    "Prepare yourself for maximum birthday chaos 😂",
+
+    "September 13 belongs to Neeshu 🎂",
+
+    "Okay now scroll... there's more 👀"
+
+];
+
+let lineIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function startTyping(){
+
+    const element =
+        document.getElementById("typingText");
+
+    const current =
+        typingLines[lineIndex];
+
+    if(!deleting){
+
+        element.textContent =
+            current.substring(0,charIndex + 1);
+
+        charIndex++;
+
+        if(charIndex === current.length){
+
+            deleting = true;
+
+            setTimeout(startTyping,1800);
+
+            return;
+        }
+
+    }else{
+
+        element.textContent =
+            current.substring(0,charIndex - 1);
+
+        charIndex--;
+
+        if(charIndex === 0){
+
+            deleting = false;
+
+            lineIndex =
+                (lineIndex + 1) %
+                typingLines.length;
+
+        }
+
+    }
+
+    setTimeout(
+        startTyping,
+        deleting ? 45 : 75
+    );
+
+}
+
+
+/* COUNTDOWN */
+
+function getNextBirthday(){
+
+    const now = new Date();
+
+    let year =
+        now.getFullYear();
+
+    let birthday =
+        new Date(
+            year,
+            8,
+            13,
+            0,
+            0,
+            0
+        );
+
+    if(now >= birthday){
+
+        birthday =
+            new Date(
+                year + 1,
+                8,
+                13,
+                0,
+                0,
+                0
+            );
+
+    }
+
+    return birthday;
+
+}
+
+
+function updateCountdown(){
+
+    const now =
+        new Date();
+
+    const birthday =
+        getNextBirthday();
+
+    const difference =
+        birthday - now;
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+    const hours =
+        Math.floor(
+            (difference /
+            (1000 * 60 * 60)) % 24
+        );
+
+    const minutes =
+        Math.floor(
+            (difference /
+            (1000 * 60)) % 60
+        );
+
+    const seconds =
+        Math.floor(
+            (difference / 1000) % 60
+        );
+
+
+    document.getElementById("days")
+        .textContent =
+        String(days).padStart(2,"0");
+
+    document.getElementById("hours")
+        .textContent =
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes")
+        .textContent =
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds")
+        .textContent =
+        String(seconds).padStart(2,"0");
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+
+/* NORMAL SURPRISE */
+
+function showMessage(){
+
+    const message =
+        document.getElementById(
+            "hiddenMessage"
+        );
+
+    message.classList.add("show");
+
+    createConfetti();
+
+}
+
+
+/* SECRET MESSAGE */
+
+function openSecret(){
+
+    const secret =
+        document.getElementById(
+            "secretMessage"
+        );
+
+    secret.classList.toggle("show");
+
+    createConfetti();
+
+}
+
+
+/* SCROLL REVEAL */
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+
+                    entry.target
+                        .classList
+                        .add("visible");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold:.15
+        }
+
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(el => {
+
+        observer.observe(e
